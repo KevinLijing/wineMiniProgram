@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "./",
-  "projectname": "wineMiniProgram",
+  "projectname": "wineMiniProgram1",
   "appid": "testAppId",
   "setting": {
     "es6": false,

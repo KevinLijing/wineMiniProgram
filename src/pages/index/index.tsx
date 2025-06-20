@@ -53,7 +53,6 @@ class Index extends Component<PropsWithChildren> {
         <Button onClick={this.decrement}>-</Button>
         <Button onClick={this.incrementAsync}>Add Async</Button>
         <Text>{counter}</Text>
-        {/* <t-button theme="primary">按钮</t-button> */}
       </View>
     )
   }

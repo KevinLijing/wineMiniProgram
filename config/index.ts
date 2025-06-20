@@ -1,13 +1,12 @@
 import { defineConfig, type UserConfigExport } from '@tarojs/cli'
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
-import CopyWebpackPlugin from 'copy-webpack-plugin'
 import devConfig from './dev'
 import prodConfig from './prod'
 
 // https://taro-docs.jd.com/docs/next/config#defineconfig-辅助函数
 export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
   const baseConfig: UserConfigExport<'webpack5'> = {
-    projectName: 'wineMiniProgram',
+    projectName: 'wineMiniProgram1',
     date: '2025-6-20',
     designWidth: 750,
     deviceRatio: {
@@ -50,24 +49,6 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
       },
       webpackChain(chain) {
         chain.resolve.plugin('tsconfig-paths').use(TsconfigPathsPlugin)
-        // chain.merge({
-        //   plugin: {
-        //     install:{
-        //       plugin: UnifiedWebpackPluginV5,
-        //       args:[{
-        //         rem2rpx: true
-        //       }]
-        //     }
-        //   }
-        // })
-        chain.plugin('copy-tdesign').use(CopyWebpackPlugin, [{
-          patterns:[
-            {
-              from: 'node_modules/tdesign-miniprogram',
-              to: 'npm/tdesign-miniprogram'
-            }
-          ]
-        }])
       }
     },
     h5: {
