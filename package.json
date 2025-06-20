@@ -80,7 +80,9 @@
     "tsconfig-paths-webpack-plugin": "^4.0.1",
     "postcss": "^8.4.18",
     "ts-node": "^10.9.1",
-    "@types/node": "^18.15.11"
+    "@types/node": "^18.15.11",
+    "less": "^4.0.0",
+    "less-loader": "^12.2.0"
   }
 }
 
