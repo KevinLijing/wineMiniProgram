@@ -10,7 +10,7 @@ const Encyclopedia = () => {
   });
   return (
     <View className="wrapper">
-     百科
+     百科~~~~~~~~~~~~~~~~~~~~
     </View>
   );
 };

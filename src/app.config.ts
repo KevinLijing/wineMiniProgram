@@ -17,12 +17,15 @@ export default {
     navigationBarTextStyle: "black",
   },
   tabBar: {
-    list: [
-      { pagePath: 'pages/home/index', text: '首页'},
-      { pagePath: 'pages/encyclopedia/index', text: '百科'},
-      { pagePath: 'pages/scan/index', text: '拍照识别'},
-      { pagePath: 'pages/management/index', text: '管理'},
-      { pagePath: 'pages/mine/index', text: '我的'}
+    custom: true,            // 启用自定义底栏
+    selectedColor: '#BB8049',         // 选中文字/图标颜色
+    backgroundColor: '#fff',          // 背景色
+    list: [                         // 即便 custom，也必须有 list，且不能空
+      { pagePath: 'pages/home/index',       text: '首页' },
+      { pagePath: 'pages/encyclopedia/index', text: '百科' },
+      { pagePath: 'pages/scan/index',       text: '' /* 只要空 text 即可 */ },
+      { pagePath: 'pages/management/index', text: '管理' },
+      { pagePath: 'pages/mine/index',       text: '我的' }
     ]
   },
   subPackages: [

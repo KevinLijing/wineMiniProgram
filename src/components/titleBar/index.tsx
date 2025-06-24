@@ -2,7 +2,7 @@ import React, { ReactNode, useEffect, useState } from 'react'
 import { View, Text, Image } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import './index.less'
-import back from '../../assert/imgs/back.png'
+import back from '../../assets/imgs/back.png'
 
 interface TitleBarProps {
   title?: string // 标题文字
