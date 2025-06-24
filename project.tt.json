@@ -1,9 +1,13 @@
 {
   "miniprogramRoot": "./",
-  "projectname": "wineMiniProgram1",
-  "appid": "testAppId",
+  "projectname": "wineMiniProgram",
+  "description": "wineNetWorkMiniProgram",
+  "appid": "touristappid",
   "setting": {
+    "urlCheck": true,
     "es6": false,
+    "postcss": false,
     "minified": false
-  }
+  },
+  "compileType": "miniprogram"
 }

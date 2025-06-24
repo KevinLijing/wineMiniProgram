@@ -1,0 +1,32 @@
+/* postcss-pxtransform disable */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .custom-navbar {
+    /* iOS 安全区：保留状态栏高度 */
+    padding-top: env(safe-area-inset-top);
+    /* iOS 兼容写法 */
+    padding-top: constant(safe-area-inset-top);
+    /* 导航栏自身高度 (不含状态栏) */
+    height: 44px;
+    /* 背景色和下划线（可自定义） */
+    background: #fff;
+    // box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-title {
+    height: 44px;
+    line-height: 44px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .page-body {
+    flex: 1;
+    /* …页面其余布局… */
+  }

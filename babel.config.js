@@ -7,5 +7,15 @@ module.exports = {
       ts: true,
       compiler: 'webpack5',
     }]
-  ]
-}
+  ],
+  plugins: [
+    [
+      'import',
+      {
+        libraryName: 'taro-hooks',
+        camel2DashComponentName: false
+      },
+      'taro-hooks',
+    ]
+  ],
+};
